@@ -535,7 +535,7 @@ public interface DiskService extends MeasurableService {
      *
      * Invokes _reduce_ on the logical volume (i.e. this is only applicable for block storage domains).
      * This is applicable for floating disks and disks attached to non-running virtual machines.
-     * There is no need to specify the size as the optimal size is calculated automatically.
+     * There is no need to specify the size, as the optimal size is calculated automatically.
      *
      * @author Daniel Erez <derez@redhat.com>
      * @author Emma Heftman <eheftman@redhat.com>
@@ -552,7 +552,7 @@ public interface DiskService extends MeasurableService {
     /**
      * Converts disk format and/or preallocation mode.
      *
-     * For example, to convert the disk format from preallocated-cow to a sparse-raw image, 
+     * For example, to convert the disk format from preallocated-cow to a sparse-raw image,
      * send a request like the following:
      *
      * [source]
